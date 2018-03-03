@@ -25,8 +25,8 @@ class SQLObject
         self.attributes[col_name]
       end
 
-      define_method("#{col_name}=") do |value|
-        self.attributes[col_name] = value
+      define_method("#{col_name}=") do |val|
+        self.attributes[col_name] = val
       end
     end
 
